@@ -49,14 +49,14 @@
 
 <script>
 (function() {
-  var stripe = Stripe('pk_test_Yq8bfLbe7SXz2xatwnw0yxHh00HnRD4ILI');
+  var stripe = Stripe('pk_live_R2h1fC7FthyNVlugwEopmH0S00hz1oIKCU');
 
   var checkoutButton = document.getElementById('checkout-button-sku_G0lyJbWSgxNKeI');
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      items: [{sku: 'sku_G2Djm49hzfM5Z7', quantity: 1}],
+      items: [{sku: 'sku_G0lyJbWSgxNKeI', quantity: 1}],
 
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
